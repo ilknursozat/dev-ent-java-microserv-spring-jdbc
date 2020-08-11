@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.math.BigInteger;
 import java.security.GeneralSecurityException;
 import java.util.Scanner;
 
@@ -17,6 +18,7 @@ import java.util.Scanner;
 class AESUtils {
     private final static String AES = "AES";
     private final static String END_OF_FILE = "\\Z";
+    private final static String DEFAULT_KEY = "ED405BB8B8C6971E7C7BEEA250D8C30057C64594AADD62F0";
 
     /**
      * Encrypt a value and generate a keyfile.
@@ -71,9 +73,29 @@ class AESUtils {
     private static byte[] readKeyFile(File keyFile)
             throws FileNotFoundException {
         Scanner scanner = new Scanner(keyFile).useDelimiter(END_OF_FILE);
-        String keyValue = scanner.next();
+        String keyTextStr = scanner.next();
+        while ((keyTextStr.length() < 16) && (scanner.hasNext())) {
+            keyTextStr = scanner.next();
+        }
+        if (keyTextStr.length() < 16) {
+            keyTextStr = DEFAULT_KEY;
+        }
         scanner.close();
-        return hexStringToByteArray(keyValue);
+
+        // Convert the keyFile string (or the default key string) to an array of bytes
+        byte[] keyHexByteArray = hexStringToByteArray(toHex(keyTextStr));
+        // Trim to 32 bytes for AES key length of 16, 24, or max of 32 bytes
+        if (keyHexByteArray.length > 32 ) {
+            byte[] smallerHexByteArray = new byte[32];
+            System.arraycopy(keyHexByteArray, 0, smallerHexByteArray, 0, 32);
+            keyHexByteArray = smallerHexByteArray;
+        }
+
+        return keyHexByteArray;
+    }
+
+    private static String toHex(String arg) {
+        return String.format("%040x", new BigInteger(1, arg.getBytes()));
     }
 
     private static String byteArrayToHexString(byte[] b) {
