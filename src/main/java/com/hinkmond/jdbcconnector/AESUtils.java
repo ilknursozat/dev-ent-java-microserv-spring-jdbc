@@ -18,7 +18,7 @@ import java.util.Scanner;
 class AESUtils {
     private final static String AES = "AES";
     private final static String END_OF_FILE = "\\Z";
-    private final static String DEFAULT_KEY = "ED405BB8B8C6971E7C7BEEA250D8C30057C64594AADD62F0";
+    private final static String DEFAULT_KEY = "ED405BB8B8C6971E7C7BEEA250D8C30057C64594AAAAAABB";
 
     /**
      * Encrypt a value and generate a keyfile.
