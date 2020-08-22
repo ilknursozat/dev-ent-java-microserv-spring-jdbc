@@ -1,9 +1,11 @@
-package com.hinkmond.jdbcconnector;
+package com.ilknur.controller;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -11,7 +13,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import javax.sql.DataSource;
 
 @SpringBootApplication
-public class JDBCApplication {
+public class EventAppFinalProject extends SpringBootServletInitializer {
     private static final String KEYFILEPATH = "./keyFile.key";
 
     /*
@@ -46,8 +48,15 @@ public class JDBCApplication {
         return jdbcConnector;
     }
 
+    //added this to provide servlet connectivity with jetty server
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(EventAppFinalProject.class);
+    }
+
     // Main method
     public static void main(String... args) {
-        SpringApplication.run(JDBCApplication.class, args);
+
+        SpringApplication.run(EventAppFinalProject.class, args);
     }
 }

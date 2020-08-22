@@ -1,4 +1,4 @@
-package com.hinkmond.jdbcconnector;
+package com.ilknur.controller;
 
 import org.springframework.stereotype.Component;
 
@@ -15,7 +15,7 @@ import java.security.GeneralSecurityException;
 import java.util.Scanner;
 
 @Component("aesUtils")
-class AESUtils {
+public class AESUtils {
     private final static String AES = "AES";
     private final static String END_OF_FILE = "\\Z";
     private final static String DEFAULT_KEY = "ED405BB8B8C6971E7C7BEEA250D8C30057C64594AAAAAABB";
@@ -124,7 +124,7 @@ class AESUtils {
         // Add your password in between the quotes, run this main, copy the encrypted password, then delete.
         String origStr = args.length == 0 ? "<Add password here, then remove when done>" : args[1];
         if (!(origStr.equals(""))) {
-            AESUtils aesUtils = new AESUtils();
+            com.ilknur.controller.AESUtils aesUtils = new com.ilknur.controller.AESUtils();
             System.err.println(aesUtils.encrypt(origStr,"./keyFile.key"));
         }
     }

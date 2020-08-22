@@ -1,4 +1,4 @@
-package com.hinkmond.jdbcconnector;
+package com.ilknur.controller;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -13,10 +13,10 @@ public class JDBCConnector {
     }
 
     void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
-        JDBCConnector.jdbcTemplate = jdbcTemplate;
+        com.ilknur.controller.JDBCConnector.jdbcTemplate = jdbcTemplate;
         String queryTmp = "SHOW TABLES;";
-        List<String> sqlResult = JDBCConnector.jdbcTemplate.queryForList(queryTmp, String.class);
-        System.out.println(">>>>>>> sqlResult: " + sqlResult);
+        List<String> sqlResult = com.ilknur.controller.JDBCConnector.jdbcTemplate.queryForList(queryTmp, String.class);
+        System.out.println(">>>>>>> Ilknurs sqlResult: " + sqlResult);
         try {
             if (jdbcTemplate.getDataSource() != null) {
                 System.out.println(">>>>>>> jdbcTemplate login timeout: " + jdbcTemplate.getDataSource()
