@@ -60,7 +60,7 @@ public class ManageController {
 
     //delete a registration
     //example rest call:
-    // curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST -d "id=123" "http://localhost:8080/deleteRegistration"
+    // curl -i -H "Accept: application/json" -H "Content-Type:application/x-www-form-urlencoded" -X POST -d "id=1" "http://localhost:8080/deleteRegistration"
     // update registration set is_deleted = 1 where id = 3;
     @CrossOrigin
     @SuppressWarnings("SqlResolve")
