@@ -1,6 +1,6 @@
-# Project Title
+# Event App Final Project
 
-One Paragraph of project description goes here
+This is a sample project developed as part of UC Santa Cruz Extension Developing Enterprise Java Microservices with Spring Boot and Spring Cloud course. The application uses Spring Boot and Spring Framework and is deployed to a jetty server running on an Amazon AWS EC2 instance. The application accesses to mysql database server running on the same AWS EC2 instance.  
 
 ## Getting Started
 
