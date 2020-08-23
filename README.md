@@ -24,5 +24,7 @@ curl, postman or a frontend application to make REST API calls.
 
 ## REST API Calls to MicroServices
 
+**getEvents 
+
 
 
