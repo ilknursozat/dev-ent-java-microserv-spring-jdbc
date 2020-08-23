@@ -9,13 +9,13 @@ The application implements an event registration system where users can search f
 ## Built With
 
 * [IntelliJ](https://www.jetbrains.com/idea/) - IDE used for development
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [MySQL](https://www.mysql.com/) - Server version: 8.0.17 Source distribution
+* [Codebase](https://github.com/hinkmond/dev-ent-java-microserv-spring-jdbc.git) - Used as a template
 
 ### Prerequisites
 
-curl or postman to make REST API calls.
+curl, postman or a frontend application to make REST API calls.
 
 ## Running the tests
 
