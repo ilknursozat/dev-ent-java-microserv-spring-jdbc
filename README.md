@@ -24,7 +24,12 @@ curl, postman or a frontend application to make REST API calls.
 
 ## REST API Calls to MicroServices
 
-***getEvents 
+#getEvents 
 
+Returns a list of events based on type and location in json format. If no type or location parameters are provided then returns all events.
 
+Sample call:
 
+curl "http://ec2-34-211-148-82.us-west-2.compute.amazonaws.com:8080/spring-jdbc/getEvents?type=zoom&location=virtual"
+
+#addUser
