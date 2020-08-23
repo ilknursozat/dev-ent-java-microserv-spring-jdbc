@@ -10,27 +10,19 @@ The application implements an event registration system where users can search f
 
 * [IntelliJ](https://www.jetbrains.com/idea/) - IDE used for development
 * [Maven](https://maven.apache.org/) - Dependency Management
-* [MySQL](https://www.mysql.com/) - Server version: 8.0.17 Source distribution
+* [Jetty Server](https://www.eclipse.org/jetty/) - Web server and Servlet Container, distribution version 9.4.30
+* [MySQL](https://www.mysql.com/) - Database Server version: 8.0.17 Source distribution
+* [Spring Framework](https://spring.io/projects/spring-framework) - Used for infrastructure support
+* [Spring Boot](https://github.com/spring-projects/spring-boot/wiki) - Used to create microservices
+* [Java 14.0.1](https://openjdk.java.net/projects/jdk/14/)
 * [Codebase](https://github.com/hinkmond/dev-ent-java-microserv-spring-jdbc.git) - Used as a template
+* [Amazon AWS EC2 Instance](https://aws.amazon.com/) - Red Hat 8.3.1-5 VM hosting Jetty and MySQL Servers 
 
 ### Prerequisites
 
 curl, postman or a frontend application to make REST API calls.
 
-## Running the tests
+## REST API Calls to MicroServices
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 
