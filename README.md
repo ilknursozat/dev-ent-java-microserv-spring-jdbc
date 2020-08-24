@@ -35,7 +35,7 @@ These functionalities are provided by the microservices and invoked via REST API
 
 ## Prerequisites
 
-curl, postman or a frontend application to make REST API calls.
+curl, postman or a front-end application to make REST API calls.
 
 ## REST API Calls to MicroServices
 
