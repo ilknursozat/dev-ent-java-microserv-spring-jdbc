@@ -15,7 +15,7 @@ The application implements an event registration system where users can:
 
 These functionalities are provided by the microservices and invoked via REST API calls made by clients. 
 
-## List of MicroServices
+## List of Controllers and MicroServices
 
 - SearchController – getEvents microservice
 - AccountController – addUser and addOrganizer microservices
