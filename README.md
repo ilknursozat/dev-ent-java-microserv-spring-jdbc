@@ -6,6 +6,12 @@ This is a sample project developed as part of UC Santa Cruz Extension Developing
 
 The application implements an event registration system where users can search for events, create a user account, create an organizer account, create an event, register to an event and delete an existing registration. The functionality is achieved via REST API calls. 
 
+## List of MicroServices
+
+- SearchController – getEvents microservice
+- AccountController – addUser and addOrganizer microservices
+- ManageController – addEvent, registerEvent and deleteRegistration microservices
+
 ## Built With
 
 * [IntelliJ](https://www.jetbrains.com/idea/) - IDE used for development
@@ -20,13 +26,7 @@ The application implements an event registration system where users can search f
 
 ## Prerequisites
 
-curl, postman or a frontend application to make REST API calls.
-
-## List of MicroServices
-
-- SearchController – getEvents microservice
-- AccountController – addUser and addOrganizer microservices
-- ManageController – addEvent, registerEvent and deleteRegistration microservices
+curl, postman or a frontend application to make REST API calls
 
 ## REST API Calls to MicroServices
 
