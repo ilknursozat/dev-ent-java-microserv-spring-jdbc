@@ -43,37 +43,42 @@ curl, postman or a frontend application to make REST API calls.
 
 Returns a list of events based on type and location in json format. If no type or location parameters are provided, all events are returned.
 
-##### _Sample call:_
+##### Sample call:
 curl "http://ec2-34-211-148-82.us-west-2.compute.amazonaws.com:8080/spring-jdbc/getEvents?type=zoom&location=virtual"
 
-#### addUser
+***addUser***
+
 Creates a new user. 
 
-##### _Sample call:_
+##### Sample call:
 curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"email\": \"ususpect@gmail.com\", \"firstName\": \"Usual\", \"lastName\": \"Suspect\", \"cityOfResidence\": \"Berkeley\", \"stateOfResidence\": \"CA\", \"address\": \"675 Main St.\", \"zipcode\": \"94705\"}" "http://ec2-34-211-148-82.us-west-2.compute.amazonaws.com:8080/spring-jdbc/addUser"
 
-#### addOrganizer
+***addOrganizer***
+
 Creates a new organizer user. An organizer has the right to create a new event.
 
-##### _Sample call:_
+##### Sample call:
 curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"userId\": 123, \"driverLicenseNumber\": \"G12345897\", \"driverLicenseState\": \"CA\"}" "http://ec2-34-211-148-82.us-west-2.compute.amazonaws.com:8080/spring-jdbc/addOrganizer"
 
-#### addEvent
+***addEvent***
+
 Creates a new event.
 
-##### _Sample call:_
+##### Sample call:
 curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"type\": \"party\", \"name\": \
 "Dance Party\", \"startDateTime\": \"2020-08-22T18:30:00\", \"endDateTime\": \"2020-08-22T23:30:00\", \"location\": \"SF Temple\", \"organizerUserId\": 123, \"ticketAmount\": 25.00, \"
 serviceFee\": 1.25}" "http://ec2-34-211-148-82.us-west-2.compute.amazonaws.com:8080/spring-jdbc/addEvent"
 
-#### registerEvent 
+***registerEvent*** 
+
 User registers to an event
 
-##### _Sample call:_
+##### Sample call:
 curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"eventId\": 125, \"userId\": 225,  \"paymentMethod\": \"PayPal\"}" "http://ec2-34-211-148-82.us-west-2.compute.amazonaws.com:8080/spring-jdbc/registerEvent"
 
-#### deleteRegistration  
+***deleteRegistration***
+
 Deletes an event
 
-##### _Sample call:_
+##### Sample call:
 curl -i -H "Accept: application/json" -H "Content-Type:application/x-www-form-urlencoded" -X POST -d "id=3" "http://ec2-34-211-148-82.us-west-2.compute.amazonaws.com:8080/spring-jdbc/deleteRegistration"
