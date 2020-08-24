@@ -43,8 +43,10 @@ curl, postman or a front-end application to make REST API calls.
 
 Returns a list of events based on type and location in json format. If no type or location parameters are provided, all events are returned.
 
-##### Sample call:
+##### Sample call(s):
 curl "http://ec2-34-211-148-82.us-west-2.compute.amazonaws.com:8080/spring-jdbc/getEvents?type=zoom&location=virtual"
+
+curl "http://ec2-34-211-148-82.us-west-2.compute.amazonaws.com:8080/spring-jdbc/getEvents"
 
 ***addUser***
 
