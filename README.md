@@ -24,10 +24,10 @@ curl, postman or a frontend application to make REST API calls.
 
 ## List of MicroServices
 
-EventAppFinalProject (SpringBootApplication)
-SearchController – getEvents microservice
-AccountController – addUser and addOrganizer microservices
-ManageController – addEvent, registerEvent and deleteRegistration microservices
+- EventAppFinalProject (SpringBootApplication)
+- SearchController – getEvents microservice
+- AccountController – addUser and addOrganizer microservices
+- ManageController – addEvent, registerEvent and deleteRegistration microservices
 
 ## REST API Calls to MicroServices
 
