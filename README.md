@@ -39,7 +39,7 @@ curl, postman or a frontend application to make REST API calls.
 
 ## REST API Calls to MicroServices
 
-#### -getEvents 
+#### _getEvents 
 Returns a list of events based on type and location in json format. If no type or location parameters are provided, all events are returned.
 
 ##### _Sample call:_
