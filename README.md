@@ -80,7 +80,7 @@ curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST
 
 ***deleteRegistration***
 
-Deletes an event
+Deletes an event.
 
 ##### Sample call:
 curl -i -H "Accept: application/json" -H "Content-Type:application/x-www-form-urlencoded" -X POST -d "id=3" "http://ec2-34-211-148-82.us-west-2.compute.amazonaws.com:8080/spring-jdbc/deleteRegistration"
