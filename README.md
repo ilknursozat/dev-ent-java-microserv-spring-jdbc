@@ -18,7 +18,7 @@ The application implements an event registration system where users can search f
 * [Codebase](https://github.com/hinkmond/dev-ent-java-microserv-spring-jdbc.git) - Used as a template
 * [Amazon AWS EC2 Instance](https://aws.amazon.com/) - Red Hat 8.3.1-5 VM hosting Jetty and MySQL Servers 
 
-### Prerequisites
+## Prerequisites
 
 curl, postman or a frontend application to make REST API calls.
 
