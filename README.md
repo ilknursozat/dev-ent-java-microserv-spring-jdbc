@@ -60,23 +60,23 @@ curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST
 Creates a new organizer user. An organizer has the right to create a new event.
 
 ##### Sample call:
-curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"userId\": 123, \"driverLicenseNumber\": \"G12345897\", \"driverLicenseState\": \"CA\"}" "http://ec2-34-211-148-82.us-west-2.compute.amazonaws.com:8080/spring-jdbc/addOrganizer"
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data '{\"userId\": 123, \"driverLicenseNumber\": \"G12345897\", \"driverLicenseState\": \"CA\"}' "http://ec2-34-211-148-82.us-west-2.compute.amazonaws.com:8080/spring-jdbc/addOrganizer"
 
 ***addEvent***
 
 Creates a new event.
 
 ##### Sample call:
-curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"type\": \"party\", \"name\": \
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data '{\"type\": \"party\", \"name\": \
 "Dance Party\", \"startDateTime\": \"2020-08-22T18:30:00\", \"endDateTime\": \"2020-08-22T23:30:00\", \"location\": \"SF Temple\", \"organizerUserId\": 123, \"ticketAmount\": 25.00, \"
-serviceFee\": 1.25}" "http://ec2-34-211-148-82.us-west-2.compute.amazonaws.com:8080/spring-jdbc/addEvent"
+serviceFee\": 1.25}' "http://ec2-34-211-148-82.us-west-2.compute.amazonaws.com:8080/spring-jdbc/addEvent"
 
 ***registerEvent*** 
 
 User registers to an event
 
 ##### Sample call:
-curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"eventId\": 125, \"userId\": 225,  \"paymentMethod\": \"PayPal\"}" "http://ec2-34-211-148-82.us-west-2.compute.amazonaws.com:8080/spring-jdbc/registerEvent"
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data '{\"eventId\": 125, \"userId\": 225,  \"paymentMethod\": \"PayPal\"}' "http://ec2-34-211-148-82.us-west-2.compute.amazonaws.com:8080/spring-jdbc/registerEvent"
 
 ***deleteRegistration***
 
