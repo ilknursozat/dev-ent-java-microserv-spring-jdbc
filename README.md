@@ -4,7 +4,16 @@ This is a sample project developed as part of UC Santa Cruz Extension Developing
 
 ## Project Description
 
-The application implements an event registration system where users can search for events, create a user account, create an organizer account, create an event, register to an event and delete an existing registration. The functionality is achieved via REST API calls. 
+The application implements an event registration system where users can:
+
+- Search for events 
+- Create a user account 
+- Create an organizer account
+- Create an event
+- Register to an event 
+- Delete an existing registration. 
+
+These functionalities are provided by the microservices and invoked via REST API calls made by clients. 
 
 ## List of MicroServices
 
@@ -26,7 +35,7 @@ The application implements an event registration system where users can search f
 
 ## Prerequisites
 
-curl, postman or a frontend application to make REST API calls
+curl, postman or a frontend application to make REST API calls.
 
 ## REST API Calls to MicroServices
 
