@@ -53,7 +53,7 @@ curl "http://ec2-34-211-148-82.us-west-2.compute.amazonaws.com:8080/spring-jdbc/
 Creates a new user. 
 
 ##### Sample call:
-curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"email\": \"ususpect@gmail.com\", \"firstName\": \"Usual\", \"lastName\": \"Suspect\", \"cityOfResidence\": \"Berkeley\", \"stateOfResidence\": \"CA\", \"address\": \"675 Main St.\", \"zipcode\": \"94705\"}" "http://ec2-34-211-148-82.us-west-2.compute.amazonaws.com:8080/spring-jdbc/addUser"
+curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data '{\"email\": \"ususpect@gmail.com\", \"firstName\": \"Usual\", \"lastName\": \"Suspect\", \"cityOfResidence\": \"Berkeley\", \"stateOfResidence\": \"CA\", \"address\": \"675 Main St.\", \"zipcode\": \"94705\"}' "http://ec2-34-211-148-82.us-west-2.compute.amazonaws.com:8080/spring-jdbc/addUser"
 
 ***addOrganizer***
 
